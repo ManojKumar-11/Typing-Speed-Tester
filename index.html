@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+
+        <div class="settings">
+            <label for="timeSelect">Time Limit:</label>
+            <select id="timeSelect">
+                <option value="30">30s</option>
+                <option value="60">60s</option>
+                <option value="120">120s</option>
+            </select>
+
+            <label for="categorySelect">Category:</label>
+            <select id="categorySelect">
+                <option value="alphabet">Alphabets</option>
+                <option value="punctuation">Punctuation</option>
+                <option value="numbers">Numbers</option>
+            </select>
+
+            <button id="startButton">Start</button>
+        </div>
+
+        <p id="passage" class="passage-display"></p>
+
+        <textarea id="typingArea" placeholder="Start typing here..." disabled></textarea>
+
+        <div class="status">
+            <p id="timer">Time: 0s</p>
+            <p id="stats">WPM: 0 | Accuracy: 100%</p>
+        </div>
+
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <script type="module" src="script.js"></script> </body>
+</html>
